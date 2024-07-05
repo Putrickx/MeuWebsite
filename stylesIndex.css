@@ -5,9 +5,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-
-    
-    
     
     }
 
@@ -25,31 +22,29 @@ header {
 header img {
     display: block;
     margin: 0;
-    width: 50%;
     height: 50px;
 
 }
 
-nav ul {
+#navTop ul {
     display: block;
-    list-style: none;
     padding: 0;
     line-height: 0;
 }
 
-nav ul li {
+#navTop ul li {
     display: inline;
     margin: 0 10px;
 }
 
-nav ul li a {
+#navTop ul li a {
     color: #fff;
-    text-decoration: none;
+    
 }
 
 main {
     padding: 15px;
-
+    
 }
 
 section {
@@ -61,34 +56,36 @@ section {
     text-align: center;
 }
 
+section ul {
+    text-align: start;}
+
+
 footer {
     background: #333;
     color: #fff;
     padding: 10px 0;
     position: fixed;
     width: 100%;
+    height: 6.25%;
     bottom: 0;
-
-
-
 }
 
-/* Page content */
-.content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
+footer nav ul {
+    justify-content: center;
+    display: flex;
+    margin-right: 10%;
+    
+}
+
+footer nav ul li {
+    margin-left: 12px;
+    margin-right: 12px;
+    list-style: none;
+}
+
+footer nav ul li a {
+    color: #fff;
+}
 
 
 /* Estilos para tablets */
@@ -104,9 +101,10 @@ footer {
 }
 
 /* Estilos para desktops */
-/*@media (min-width: 1024px) {
+@media (min-width: 1024px) {
     body {
         font-size: 18px;
+        width: 97%;
     }
 
     header {
@@ -119,21 +117,26 @@ footer {
         line-height: 0;
         display: flex;
         flex-direction: column;
-        align-items: first baseline;
+        align-items: center;
         height: 20px;
         padding: 20px;
+        
+    }
+ 
+    footer nav {
+        margin-right: 2.5%;
     }
 
-    
-
-    nav ul li {
-        margin: 0 15px;
-    }
 
     main {
         padding: 30px;
         max-width: 1200px;
         margin: auto;
+    }
+
+    span ul li {
+        margin-left: 19.5%;
+
     }
 
     section {
