@@ -1,0 +1,36 @@
+Início
+
+O que encontrará neste site?
+
+Neste site vou listar todos os serviços por mim oferecidos e suas descrições.
+Também poderá encontrar neste site informações sobre:
+- sistemas operativos
+- componentes
+- periféricos
+- servidores
+- computadores pessoais que utiliza no dia a dia, como como ele funciona, e como saber se precisa de manutenção.
+manutenção.
+- etc
+
+Serviços:
+
+
+Manutenção preventiva:
+- Backup de dados do PC, formatação e instalação de sistema operativo a escolha.
+- Abertura e limpeza da parte interna do PC desktop ou portátil.
+- Desmonte e limpeza de componentes como GPU e Fonte de alimentação
+- Troca de pasta termica em todos os componentes.
+
+Outros serviços para computadores pessoais:
+- Montagem de computadores desktop ou gamer
+- Upgrade de componentes de computadores desktop e portáteis como: Processador, armazenamento, memória RAM, sistema de ventilação
+- Diagnóstico e solução de problemas de hardware a nivel de troca e configuração de componentes.
+- Diagnóstico e solução de problemas de software em geral
+- Pacote office
+- Servidor local
+
+Para empresas:
+- Sistema POS (faturação)
+- Suporte e administração de sistemas
+- Site wordpress (mostrar exemplos elementor)
+- Servidor local
