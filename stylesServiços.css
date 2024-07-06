@@ -113,6 +113,13 @@ footer nav ul li a {
         padding: 20px;
     }
 
+    header img {
+
+        margin: 0;
+    height: 50px;
+    width: 50%; }
+
+
     footer {
         line-height: 0;
         display: flex;
@@ -140,7 +147,12 @@ footer nav ul li a {
     }
 
     section {
-        margin-bottom: 30px;
-        padding: 25px;
+
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
     }
 }
