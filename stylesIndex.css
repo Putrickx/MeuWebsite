@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     
+    
     }
 
 header {
@@ -49,14 +50,16 @@ main {
 
 section {
     margin-bottom: 20px;
-    background: #fff;
+    background: #e5e2e2;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
+    
 }
 
 section ul {
+    list-style: none;
     text-align: start;}
 
 
@@ -86,7 +89,6 @@ footer nav ul li {
 footer nav ul li a {
     color: #fff;
 }
-
 
 /* Estilos para tablets */
 /*@media (min-width: 600px) {

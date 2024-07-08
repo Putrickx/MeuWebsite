@@ -5,26 +5,28 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow: auto;
     
     }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 75px;
-}
+    header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+    }
+    
+    header img {
+       
+        margin: 0;
+        height: 50px;
+        width: 100%;
+    }
 
-header img {
-    display: block;
-    margin: 0;
-    height: 50px;
-
-}
 
 #navTop ul {
     display: block;
@@ -49,12 +51,14 @@ main {
 
 section {
     margin-bottom: 20px;
-    background: #fff;
+    background: #e5e2e2;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
+    line-height: 1.5;
 }
+
 
 section ul {
     text-align: start;}
@@ -87,6 +91,48 @@ footer nav ul li a {
     color: #fff;
 }
 
+
+/*Estilo do script*/
+
+/*.content {
+    opacity: 0;
+    transition: opacity 1.2s;
+    display: none;
+}
+
+.content.visible {
+    opacity: 1;
+    display: block;
+    
+}*/
+
+.content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, opacity 0.5s; /* Transitions for max-height and opacity */
+}
+
+.content.visible {
+    opacity: 1;
+    max-height: 320px; /* Adjust to a value that accommodates your content */
+    transition: max-height 0.5s, opacity 0.5s; /* Ensure both transitions apply */
+}
+
+
+.arrow {
+    margin-left: 10px;
+    transition: transform 0.3s;
+    display: inline-block; /* Ensure the arrow can rotate properly */
+}
+
+.arrow.right {
+    transform: rotate(0deg);
+}
+
+.arrow.down {
+    transform: rotate(90deg);
+}
 
 /* Estilos para tablets */
 /*@media (min-width: 600px) {
@@ -141,7 +187,7 @@ footer nav ul li a {
         margin: auto;
     }
 
-    span ul li {
+    section ul li {
         margin-left: 19.5%;
 
     }
@@ -149,7 +195,7 @@ footer nav ul li a {
     section {
 
     margin-bottom: 20px;
-    background: #fff;
+    background: #e5e2e2;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
