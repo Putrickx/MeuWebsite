@@ -1,14 +1,17 @@
 /* Estilos básicos para dispositivos móveis */
+
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.2;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    overflow: auto;
+    overflow: scroll;
+    
+    
+    
     
     }
-
+    
     header {
         background: #333;
         color: #fff;
@@ -17,19 +20,18 @@ body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 75px;
     }
     
     header img {
-       
+        
         margin: 0;
         height: 50px;
         width: 100%;
     }
-
-
-#navTop ul {
-    display: block;
+    
+    
+    #navTop ul {
+        display: block;
     padding: 0;
     line-height: 0;
 }
@@ -46,32 +48,47 @@ body {
 
 main {
     padding: 15px;
+}
+
+
+
+#collapsibleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    height: 100%;
     
 }
 
+#titlesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titlesContainer h1 {
+    margin: 0;
+}
+
 section {
-    margin-bottom: 20px;
+    
     background: #e5e2e2;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-    line-height: 1.5;
+    
+    
 }
-
-
-section ul {
-    text-align: start;}
-
 
 footer {
     background: #333;
     color: #fff;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    height: 6.25%;
     bottom: 0;
+    width: 100%;
+    position: relative;
+    top: 15vh;
 }
 
 footer nav ul {
@@ -98,25 +115,32 @@ footer nav ul li a {
     opacity: 0;
     transition: opacity 1.2s;
     display: none;
-}
-
-.content.visible {
-    opacity: 1;
-    display: block;
+    }
     
-}*/
-
-.content {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s, opacity 0.5s; /* Transitions for max-height and opacity */
-}
-
-.content.visible {
-    opacity: 1;
-    max-height: 320px; /* Adjust to a value that accommodates your content */
-    transition: max-height 0.5s, opacity 0.5s; /* Ensure both transitions apply */
+    .content.visible {
+        opacity: 1;
+        display: block;
+        
+        }*/
+        
+        
+        
+        
+        .content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s, opacity 0.5s; /* Transitions for max-height and opacity */
+            margin: 10px;
+            display: none;
+            
+        }
+        
+        .content.visible {
+            opacity: 1;
+            max-height: 320px; /* Adjust to a value that accommodates your content */
+     transition: max-height 0.5s, opacity 0.5s; /* Ensure both transitions apply */
+     line-height: 2;
 }
 
 
@@ -134,25 +158,35 @@ footer nav ul li a {
     transform: rotate(90deg);
 }
 
-/* Estilos para tablets */
-/*@media (min-width: 600px) {
-    main {
-        padding: 20px;
-    }
-
-    section {
-        margin-bottom: 25px;
-        padding: 20px;
-    }
-}
-
-/* Estilos para desktops */
-@media (min-width: 1024px) {
+/*.title {
+    margin: auto;
+    
+    } */
+    
+    
+    
+    
+    /* Estilos para tablets */
+    /*@media (min-width: 600px) {
+        main {
+            padding: 20px;
+            }
+            
+            section {
+                margin-bottom: 25px;
+                padding: 20px;
+                }
+                }
+                
+                /* Estilos para desktops */
+                @media (min-width: 1024px) {
     body {
-        font-size: 18px;
-        width: 97%;
+            font-size: 18px;
+            width: 97%; 
+            display: flex;
+            flex-direction: column;
     }
-
+    
     header {
         text-align: left;
         height: 90px;
@@ -160,20 +194,20 @@ footer nav ul li a {
     }
 
     header img {
-
+        
         margin: 0;
-    height: 50px;
-    width: 50%; }
-
-
-    footer {
+        height: 50px;
+        width: 50%; }
+        
+        
+        footer {
         line-height: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 20px;
         padding: 20px;
-        
+        margin-top: 0;
     }
  
     footer nav {
@@ -182,23 +216,17 @@ footer nav ul li a {
 
 
     main {
-        padding: 30px;
+        padding: 15px;
         max-width: 1200px;
         margin: auto;
     }
 
-    section ul li {
-        margin-left: 19.5%;
-
-    }
-
     section {
-
-    margin-bottom: 20px;
+        
     background: #e5e2e2;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
+        width: 200vh;
     }
 }
