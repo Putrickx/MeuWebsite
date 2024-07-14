@@ -9,7 +9,7 @@ body {
     
     }
 
-header {
+    header {
     background: #333;
     color: #fff;
     padding: 10px 0;
@@ -46,6 +46,10 @@ header img {
 main {
     padding: 15px;
     
+}
+
+#welcomeContainer {
+    margin-bottom: 35px;
 }
 
 section {
@@ -154,4 +158,16 @@ footer nav ul li a {
         padding: 25px;
         background-color: #e5e2e2;
     }
+
+#BTCapi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+    
+
+
+}
+
 }

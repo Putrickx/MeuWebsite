@@ -108,6 +108,11 @@ footer nav ul li a {
     color: #fff;
 }
 
+#BTCapi {
+    overflow: hidden;
+    
+}
+
 
 /*Estilo do script*/
 
@@ -138,7 +143,7 @@ footer nav ul li a {
         
         .content.visible {
             opacity: 1;
-            max-height: 320px; /* Adjust to a value that accommodates your content */
+            max-height: 357px; /* Adjust to a value that accommodates your content */
      transition: max-height 0.5s, opacity 0.5s; /* Ensure both transitions apply */
      line-height: 2;
 }
