@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.rates-container {
+    background-color: #e5e2e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+.rate-item {
+    margin: 10px 0;
+    font-size: 1em;
+}
+.rate-item span {
+    display: inline-block;
+    min-width: 150px;
+    font-weight: bold;
+}
+.loading {
+    color: #888;
+}
+.error {
+    color: red;
+}
